@@ -1,0 +1,165 @@
+/* Begin Structure */
+body { color: #333; font-size: 62.5%; font-family: CSS_PROPERTY_UNDEF; background-color: #fff; background-image: url("imgs/background.png"); background-repeat: repeat; background-position: 0 0; text-align: center; margin: 0; padding: 0 }
+body #page { width: 75% }
+body.wide #page { width: 95% }
+#page { background-color: #fff; text-align: left; margin: 0 auto; padding: 0; border: solid 5px #99f }
+
+
+/* --- Display Width --- */
+#menu { text-align: right; padding-top: 2px; padding-bottom: 3px }
+#menu ul { list-style-type: none; display: inline }
+#menu ul li { list-style-type: none; display: inline }
+#menu ul li:before { list-style-type: none; display: inline; content: "" }
+#navigation { margin: 0; background-color: #fff; background-image: url("imgs/header_navi_bg.png"); background-repeat: repeat-x; background-position: 0 0 }
+#navigation a { color: #00f; padding: 3px 10px 3px 0 }
+#navigation a:hover { color: #c3c }
+#header { margin: 0 3px 0; padding: 0 }
+#headerimg { background: #fff url("imgs/header.png") no-repeat; margin: 0; padding: 0; border: double 3px #99f }
+#header2 { margin: 0; padding: 3px; background-image: url("imgs/content_header_bg.png"); background-repeat: repeat-x; background-position: 0 0 }
+#content { font-size: 1.1em; line-height: 1.4em; margin: 0 0 10px 0; padding: 20px }
+#content.withsidebar { width: 63%; float: left }
+#content.withoutsidebar { }
+#sidebar { font: 1em "Lucida Grande", Verdana, Arial, Sans-Serif; margin: 0 0 10px; padding: 20px 15px; width: 24%; float: right; border-left: 1px solid #99f }
+#sidebar form { margin: 0 }
+#footer { margin: 10px auto; padding: 0; width: 99%; clear: both; border-top: 1px solid #ccc }
+#footer p { text-align: center; margin: 0; padding: 20px 0 0 }
+/* End Structure */
+
+
+/* Begin Left Column */
+td#leftcolumn { width: 50% }
+td#leftcolumn th { }
+td#leftcolumn div.blockTitle { font: bold 1.2em "Lucida Grande", Verdana, Sans-Serif; margin: 10px 0 5px; padding: 0 }
+td#leftcolumn div.blockContent { margin: 0 0 0 10px }
+/* End Left Column */
+
+
+/* Begin Center Column */
+td#centercolumn { }
+td#centercolumn th { color: #fff; background-color: #99f; vertical-align: middle }
+td#centerCcolumn { padding: 0 3px 1px }
+td#centerCcolumn div.blockTitle { font: bold 1.6em "Hiragino Maru Gothic Pro", "Hiragino Kaku Gothic Pro", Osaka, "Trebuchet MS", "Lucida Grande", Verdana, Arial, Sans-Serif; margin: 0 0 10px }
+td#centerCcolumn div.blockContent { margin: 0 0 20px }
+td#centerLcolumn { padding: 0 3px 0 0; width: 50% }
+td#centerLcolumn div.blockTitle { font: bold 1.6em "Hiragino Maru Gothic Pro", "Hiragino Kaku Gothic Pro", Osaka, "Trebuchet MS", "Lucida Grande", Verdana, Arial, Sans-Serif; margin: 0 0 10px }
+td#centerLcolumn div.blockContent { margin: 0 0 20px }
+td#centerRcolumn { padding: 0 3px 0 0; width: 50% }
+td#centerRcolumn div.blockTitle { font: bold 1.6em "Hiragino Maru Gothic Pro", "Hiragino Kaku Gothic Pro", Osaka, "Trebuchet MS", "Lucida Grande", Verdana, Arial, Sans-Serif; margin: 0 0 10px }
+td#centerRcolumn div.blockContent { margin: 0 0 20px }
+/* End Center Column */
+
+
+/* Begin Right Column */
+td#rightcolumn { width: 50% }
+td#rightcolumn th { }
+td#rightcolumn div.blockTitle { font: bold 1.2em "Lucida Grande", Verdana, Sans-Serif; margin: 10px 0 5px; padding: 0 }
+td#rightcolumn div.blockContent { margin: 0 0 0 10px }
+/* End Right Column */
+
+
+/* Begin Menus */
+td#mainmenu { margin: 0 }
+td#mainmenu a:before { content: url(imgs/menubullet.png) }
+td#mainmenu a:hover { }
+td#mainmenu a.menuTop { padding-left: 3px }
+td#mainmenu a.menuMain { padding-left: 3px }
+td#mainmenu a.menuSub { padding-left: 9px }
+td#usermenu { margin: 0 }
+td#usermenu a:before { content: url(imgs/menubullet.png) }
+td#usermenu a:hover { }
+td#usermenu a.menuTop { padding-left: 3px }
+td#usermenu a.highlight { background-color: #fcc }
+/* End Menus */
+
+
+/* Begin Lists */
+html>body ul { text-indent: -12px; list-style: none }
+ul li:before { content: "\00BB \0020" }
+ul { margin-top: 0; margin-left: 0; padding-left: 12px } 
+li { margin: 7px 0 8px 10px }
+li.non:before { content: "" }
+li.non { list-style-type: none }
+/* End Lists */
+
+
+/* Begin Headers */
+h1, h2, h3, h4 { font-family: "Trebuchet MS", "Lucida Grande", Verdana, Arial, Sans-Serif; font-weight: bold }
+h1 { font-size: 4em; text-align: center; margin: 0; padding: 20px 30px 0 }
+h2 { font-size: 1.6em; margin: 30px 0 10px }
+h2.pagetitle { text-align: center }
+#sidebar h2 { font: 1.2em "Lucida Grande", Verdana, Sans-Serif; margin: 5px 0 0; padding: 0 }
+h3 { font-size: 1.3em; margin: 30px 0 0; padding: 0 }
+h1, h1 a, h1 a:hover, h1 a:visited { color: #acacff; text-decoration: none }
+.description { color: #a9a9ff; text-decoration: none }
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited { color: #333 }
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, cite { text-decoration: none }
+a, h2 a:hover, h3 a:hover { color: #06c; text-decoration: none }
+a:hover { color: #147; text-decoration: underline }
+.description { color: #66f; font-size: 1.2em; text-align: center; padding: 0 30px 20px }
+acronym, abbr, span.caps { font-size: 0.9em; letter-spacing: 0.07em }
+/* End Headers */
+
+
+/* Begin System Messages */
+div.errorMsg { font-weight: bold; background-color: #fcc; text-align: center; padding: 10px; width: 75%; border-style: solid; border-width: 1px 1px 1px 10px; border-color: #ddf #aaa #aaa #99f }
+div.confirmMsg { color: #136c99; font-weight: bold; background-color: #ddffdf; text-align: center; padding: 10px; width: 75%; border-style: solid; border-width: 1px 1px 1px 10px; border-color: #ddf #aaa #aaa #99f }
+div.resultMsg { color: #333; font-weight: bold; background-color: #f9f9f9; text-align: center; padding: 10px; width: 75%; border-style: solid; border-width: 1px 1px 1px 10px; border-color: silver #666 #666 #99f }
+/* End System Messages */
+
+
+/* Begin Posts */
+div.xoopsCode { font-family: "Courier New", Courier, monospace; background-color: #e7e7e7; padding: 6px; border: inset 1px #000 }
+div.xoopsQuote { font-style: italic }
+/* End Posts */
+
+
+/* Begin Other */
+input { font-size: 80% }
+#sidebar input { font-size: 120% }
+select { font-size: 80% }
+#sidebar select { font-size: 120% }
+table { width: 100% }
+table td { padding: 0; vertical-align: top }
+th { color: #fff; font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #99f; padding: 2px; vertical-align: middle }
+tr.even td { background-color: #f8f8f8; padding: 5px }
+tr.odd td { background-color: #fff; padding: 5px }
+.outer { }
+.head { font-weight: bold; padding-top: 5px; padding-bottom: 5px; background-color: #ccf }
+.even { background-color: #fff; padding: 5px }
+.odd { background-color: #f8f8f8; padding: 5px }
+.foot { font-weight: bold; background-color: #f8f8f8; padding: 5px }
+.item { }
+.itemHead { padding: 3px }
+.itemInfo { text-align: right; padding: 3px }
+.itemTitle a { color: #000; font: bold 1.6em "Trebuchet MS", "Lucida Grande", Verdana, Arial, Sans-Serif; margin: 30px 0 10px }
+.itemPoster { font-size: 90%; font-style: italic }
+.itemPostDate { font-size: 90%; font-style: italic }
+.itemStats { font-size: 90%; font-style: italic }
+.itemBody { padding-left: 5px }
+.itemText { line-height: 1.5em; margin-top: 5px; margin-bottom: 5px }
+.itemText:first-letter { }
+.itemFoot { text-align: right; padding: 3px }
+.itemAdminLink { font-size: 90% }
+.itemPermaLink { font-size: 90% }
+/* End Other */
+
+
+/* Begin NewBB */
+#com_text { width: 100% }
+.comTitle { font-weight: bold; margin-bottom: 2px }
+.comText { padding: 2px }
+.comUserStat { color: #2f5376; font-size: 10px; font-weight: bold; background-color: #fff; margin: 2px; padding: 2px; border: solid 1px silver }
+.comUserStatCaption { font-weight: normal }
+.comUserStatus { color: #2f5376; font-size: 10px; font-weight: bold; margin-top: 10px; margin-left: 2px }
+.comUserRank { margin: 2px }
+.comUserRankText { font-size: 10px; font-weight: bold }
+.comUserRankImg { border: 0 }
+.comUserName { }
+.comUserImg { margin: 2px }
+.comDate { font-size: smaller; font-style: italic; font-weight: normal }
+.comDateCaption { font-style: normal; font-weight: bold }
+ul.newbb_level1, ul.newbb_level2, ul.newbb_level3 { background-color: #e7e7e7; text-indent: 0; width: 140px }
+li.newbb_folder { color: #fff; background-color: #99f; border: solid 1px #99f }
+li.newbb_folder:before { content: }
+.newbb_link:hover { color: #fff }
+/* End NewBB */

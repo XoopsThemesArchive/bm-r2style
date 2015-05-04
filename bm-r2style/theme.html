@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-Style-type" content="text/css" />
+<meta http-equiv="Content-Script-type" content="text/javascript" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link rel="shortcut icon" href="<{$xoops_url}>/favicon.ico" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<script type="text/javascript" src="<{$xoops_url}>/themes/<{$xoops_theme}>/style.js"></script>
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+-->
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+var wide = getCookie('body');
+if (wide) {
+	changing(wide);
+}
+</script>
+<div id="page">
+<div id="header">
+<div id="menu">
+<div id="navigation">
+<ul class ="navilist">
+<li class ="navimenu">display </li>
+<li class ="navimenu"><strong><a href="#" onclick="changing('wide');">&lt;&nbsp;-&nbsp;&gt;</a></strong></li>
+<li class ="navimenu"><strong><a href="#" onclick="changing('');">&gt;&nbsp;&lt;</a></strong></li>
+</ul>
+</div>
+</div>
+<div id="headerimg">
+<h1><a href="<{$xoops_url}>"><{$xoops_sitename}></a></h1>
+<div class="description"><{$xoops_slogan}></div>
+</div>
+<div id="header2">&nbsp;</div>
+</div>
+<div id="content" class="withsidebar">
+<!-- Display static content for module -->
+<{$xoops_contents}>
+<!-- End display static content -->
+<!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+<table cellspacing="0">
+<tr>
+<td id="centerCcolumn" colspan="2">
+<!-- Begin center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}>
+<div>
+<div class="blockTitle"><{$block.title}></div>
+<div class="blockContent"><{$block.content}></div>
+</div>
+<{/foreach}>
+<!-- End center-center blocks loop -->
+</td>
+</tr>
+<tr>
+<td id="centerLcolumn">
+<!-- Begin center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}>
+<div style="margin-right: 7px">
+<div class="blockTitle"><{$block.title}></div>
+<div class="blockContent"><{$block.content}></div>
+</div>
+<{/foreach}>
+<!-- End center-left blocks loop -->
+</td>
+<td id="centerRcolumn">
+<!-- Begin center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}>
+<div style="margin-left: 7px">
+<div class="blockTitle"><{$block.title}></div>
+<div class="blockContent"><{$block.content}></div>
+</div>
+<{/foreach}>
+<!-- End center-right blocks loop -->
+</td>
+</tr>
+</table>
+<{/if}>
+<!-- End display center blocks -->
+</div>
+<div id="sidebar">
+<table cellspacing="0">
+<tr>
+<td id="leftcolumn">
+<!-- Begin left blocks loop -->
+<{foreach item=block from=$xoops_lblocks}>
+<div class="blockTitle"><{$block.title}></div>
+<div class="blockContent"><{$block.content}></div>
+<{/foreach}>
+<!-- End left blocks loop -->
+</td>
+</tr>
+<tr>
+<td id="rightcolumn">
+<!-- Begin right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}>
+<div class="blockTitle"><{$block.title}></div>
+<div class="blockContent"><{$block.content}></div>
+<{/foreach}>
+<!-- End right blocks loop -->
+</td>
+</tr>
+</table>
+</div>
+<div id="footer">
+<!-- I ask the fact that the credit of B is not deleted to you. -->
+<p><{$xoops_footer}>&nbsp;&nbsp;[ Theme : <a href="http://bluemirage.com">BLUE MIRAGE</a> ]</p>
+</div>
+</div>
+</body>
+
+</html>
